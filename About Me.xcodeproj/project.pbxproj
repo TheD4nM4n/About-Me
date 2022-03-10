@@ -19,6 +19,7 @@
 		8A87FF8B27D124AE00B2B270 /* About_MeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A87FF8A27D124AE00B2B270 /* About_MeTests.swift */; };
 		8A87FF9527D124AE00B2B270 /* About_MeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A87FF9427D124AE00B2B270 /* About_MeUITests.swift */; };
 		8A87FF9727D124AE00B2B270 /* About_MeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A87FF9627D124AE00B2B270 /* About_MeUITestsLaunchTests.swift */; };
+		8AD5B3E527DA5F23001216FD /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5B3E427DA5F23001216FD /* ViewModifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		8A87FF9027D124AE00B2B270 /* About MeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "About MeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A87FF9427D124AE00B2B270 /* About_MeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About_MeUITests.swift; sourceTree = "<group>"; };
 		8A87FF9627D124AE00B2B270 /* About_MeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About_MeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8AD5B3E427DA5F23001216FD /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				8A87FF7D27D124AD00B2B270 /* Assets.xcassets */,
 				8A87FF7F27D124AD00B2B270 /* Preview Content */,
 				8A84AA4127D666C700A6745D /* HomeView.swift */,
+				8AD5B3E427DA5F23001216FD /* ViewModifiers.swift */,
 				8A84AA4327D666E400A6745D /* MusicView.swift */,
 				8A84AA4927D6679500A6745D /* CardView.swift */,
 				8A84AA4527D666F000A6745D /* TelevisionView.swift */,
@@ -275,6 +278,7 @@
 				8A84AA4A27D6679500A6745D /* CardView.swift in Sources */,
 				8A84AA4827D666F700A6745D /* GamesView.swift in Sources */,
 				8A84AA4227D666C700A6745D /* HomeView.swift in Sources */,
+				8AD5B3E527DA5F23001216FD /* ViewModifiers.swift in Sources */,
 				8A84AA4627D666F000A6745D /* TelevisionView.swift in Sources */,
 				8A87FF7C27D124AA00B2B270 /* ContentView.swift in Sources */,
 				8A84AA4427D666E400A6745D /* MusicView.swift in Sources */,

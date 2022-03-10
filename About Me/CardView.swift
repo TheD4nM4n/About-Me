@@ -7,16 +7,8 @@
 
 import SwiftUI
 
-struct CardModifier: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .cornerRadius(20)
-            .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 0)
-    }
-    
-}
-
 struct CardView: View {
+    
     let image: Image
     let title: String
     let description: String
@@ -34,19 +26,15 @@ struct CardView: View {
                 
                 VStack(alignment: .leading) {
                     Text(title)
-                        .font(.system(size: 26, weight: .bold, design: .default))
-                        .foregroundColor(.white)
-                        .padding(.top, 1)
+                        .modifier(TitleModifier(fontSize: 26))
                     Text(description)
-                        .font(.system(size: 16, weight: .bold, design: .default))
-                        .foregroundColor(.gray)
-                    HStack {
+                        .modifier(DescriptionModifier())
+                    if year != "" {
                         Text(year)
-                            .font(.system(size: 16, weight: .bold, design: .default))
-                            .foregroundColor(.white)
-                            .padding(.top,0)
+                            .modifier(YearModifier())
                     }
-                }.padding(.trailing, 20)
+                }
+                .padding(.trailing, 20)
                 Spacer()
             }
             .frame(maxWidth: .infinity, alignment: .center)

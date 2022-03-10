@@ -9,12 +9,53 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color(red: 51/255, green: 51/255, blue: 51/255)
+            
+            ScrollView {
+                HStack {
+                    VStack {
+                        Text("Daniel Poe")
+                            .modifier(TitleModifier(fontSize: 64))
+                        
+                        Text("18; he/him; senior")
+                            .font(.system(
+                                size: 16,
+                                weight: .bold,
+                                design: .default)
+                            )
+                            .foregroundColor(.gray)
+                    }
+                    
+                    Image("portrait")
+                        .resizable()
+                        .frame(width: 100, height: 100)
+                        .cornerRadius(10)
+                        .padding()
+                    
+                }
+                .padding(.top, 20)
+                
+                Text("Hi, I'm Daniel! Thank you for visiting my page! I am a senior at the Chambersburg Area Career Magnet School. I love software development, 3D printing, music, video games, and anime! Listed below are some of my social media links. Feel free to follow! You can also check out the other tabs at the bottom to see my favorite games, music, and tv/movies. Have a good day!")
+                    .modifier(YearModifier())
+                    .padding(.horizontal, 175)
+                    .padding(.bottom, 50)
+                
+                Text("Links")
+                    .modifier(TitleModifier(fontSize: 26))
+                
+                CardView(image: Image("instagram"), title: "instagram", description: "@thed4nm4n", year: "", url: "https://instagram.com/thed4nm4n")
+                
+                CardView(image: Image("youtube"), title: "youtube", description: "Daniel Poe", year: "", url: "https://www.youtube.com/channel/UCgVgxSEy4pOR7LFT6nPexOg")
+            }
+        }
     }
+    
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .previewDevice("iPad (9th generation)")
     }
 }
