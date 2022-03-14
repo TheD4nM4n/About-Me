@@ -8,6 +8,14 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @State private var isShowingPopover: Bool = false
+    
+    func copyDiscordToClipboard() {
+        UIPasteboard.general.string = "D4n#2719"
+        isShowingPopover = true
+    }
+    
     var body: some View {
         ZStack {
             Color(red: 51/255, green: 51/255, blue: 51/255)
@@ -41,12 +49,21 @@ struct HomeView: View {
                     .padding(.horizontal, 175)
                     .padding(.bottom, 50)
                 
-                Text("Links")
+                Text("links")
                     .modifier(TitleModifier(fontSize: 26))
                 
-                CardView(image: Image("instagram"), title: "instagram", description: "@thed4nm4n", year: "", url: "https://instagram.com/thed4nm4n")
+                CardView(image: Image("instagram"), title: "instagram", description: "@thed4nm4n", year: nil, url: "https://instagram.com/thed4nm4n")
                 
-                CardView(image: Image("youtube"), title: "youtube", description: "Daniel Poe", year: "", url: "https://www.youtube.com/channel/UCgVgxSEy4pOR7LFT6nPexOg")
+                CardView(image: Image("twitter"), title: "twitter", description: "@the_d4n_m4n", year: nil, url: "https://twitter.com/the_d4n_m4n")
+                
+                Button(action: copyDiscordToClipboard) {
+                CardView(image: Image("discord"), title: "discord", description: "D4n#2719", year: nil, url: nil)
+                }
+                .popover(isPresented: $isShowingPopover) {
+                    Text("copied to clipboard!")
+                }
+                
+                CardView(image: Image("youtube"), title: "youtube", description: "Daniel Poe", year: nil, url: "https://www.youtube.com/channel/UCgVgxSEy4pOR7LFT6nPexOg")
             }
         }
     }

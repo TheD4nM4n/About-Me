@@ -14,9 +14,8 @@ struct GamesView: View {
             
             ScrollView {
                 Text("favorite games")
-                    .padding()
-                    .foregroundColor(.white)
-                    .font(.system(size: 26, weight: .bold, design: .default))
+                    .modifier(TitleModifier(fontSize: 26))
+                    .padding(.top)
                 
                 VStack {
                     CardView(image: Image("osu"), title: "osu!", description: "rhythm game" , year: "2008", url: "https://osu.ppy.sh")
