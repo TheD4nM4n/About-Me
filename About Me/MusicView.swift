@@ -12,7 +12,7 @@ struct MusicView: View {
         ZStack {
             Color(red: 51/255, green: 51/255, blue: 51/255)
             
-            ScrollView {
+            VStack {
                 Text("favorite music")
                     .modifier(TitleModifier(fontSize: 26))
                     .padding(.top)
@@ -22,6 +22,10 @@ struct MusicView: View {
                 CardView(image: Image("umeanevenlesstomenow"), title: "u mean even less to me now", description: "lieu", year: "2020", url: "https://youtu.be/OejyzWze9DI")
                 
                 CardView(image: Image("backnfourth"), title: "back n fourth", description: "ericdoa", year: "2021", url: "https://youtu.be/M5yblXlUk9M")
+                
+                CardView(image: Image("novitality"), title: "ないばいたりてぃ", description: "P丸様。", year: "2021", url: "https://youtu.be/bRx2bU4pEAI")
+                
+                CardView(image: Image("yourfavoritesidekick"), title: "Your favorite sidekick (feat. 8485)", description: "underscores", year: "2021", url: "https://youtu.be/79Ll_65fbFg")
             }
         }
     }

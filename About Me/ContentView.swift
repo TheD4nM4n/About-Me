@@ -24,7 +24,7 @@ struct ContentView: View {
                     Image(systemName: "airpods.gen3")
                 }
             
-            TelevisionView()
+            AnimeView()
                 .tabItem {
                     Image(systemName: "video.fill")
                 }

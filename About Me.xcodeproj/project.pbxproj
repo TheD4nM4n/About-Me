@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8A84AA4227D666C700A6745D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A84AA4127D666C700A6745D /* HomeView.swift */; };
 		8A84AA4427D666E400A6745D /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A84AA4327D666E400A6745D /* MusicView.swift */; };
-		8A84AA4627D666F000A6745D /* TelevisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A84AA4527D666F000A6745D /* TelevisionView.swift */; };
+		8A84AA4627D666F000A6745D /* AnimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A84AA4527D666F000A6745D /* AnimeView.swift */; };
 		8A84AA4827D666F700A6745D /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A84AA4727D666F700A6745D /* GamesView.swift */; };
 		8A84AA4A27D6679500A6745D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A84AA4927D6679500A6745D /* CardView.swift */; };
 		8A87FF7A27D124AA00B2B270 /* About_MeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A87FF7927D124AA00B2B270 /* About_MeApp.swift */; };
@@ -42,7 +42,7 @@
 /* Begin PBXFileReference section */
 		8A84AA4127D666C700A6745D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8A84AA4327D666E400A6745D /* MusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicView.swift; sourceTree = "<group>"; };
-		8A84AA4527D666F000A6745D /* TelevisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelevisionView.swift; sourceTree = "<group>"; };
+		8A84AA4527D666F000A6745D /* AnimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeView.swift; sourceTree = "<group>"; };
 		8A84AA4727D666F700A6745D /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
 		8A84AA4927D6679500A6745D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		8A87FF7627D124AA00B2B270 /* About Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "About Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +83,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A5B88E127E8CB8B005B669D /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		8A87FF6D27D124AA00B2B270 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +113,7 @@
 		8A87FF7827D124AA00B2B270 /* About Me */ = {
 			isa = PBXGroup;
 			children = (
+				8A5B88E127E8CB8B005B669D /* Sounds */,
 				8A87FF7927D124AA00B2B270 /* About_MeApp.swift */,
 				8A87FF7B27D124AA00B2B270 /* ContentView.swift */,
 				8A87FF7D27D124AD00B2B270 /* Assets.xcassets */,
@@ -114,7 +122,7 @@
 				8AD5B3E427DA5F23001216FD /* ViewModifiers.swift */,
 				8A84AA4327D666E400A6745D /* MusicView.swift */,
 				8A84AA4927D6679500A6745D /* CardView.swift */,
-				8A84AA4527D666F000A6745D /* TelevisionView.swift */,
+				8A84AA4527D666F000A6745D /* AnimeView.swift */,
 				8A84AA4727D666F700A6745D /* GamesView.swift */,
 			);
 			path = "About Me";
@@ -279,7 +287,7 @@
 				8A84AA4827D666F700A6745D /* GamesView.swift in Sources */,
 				8A84AA4227D666C700A6745D /* HomeView.swift in Sources */,
 				8AD5B3E527DA5F23001216FD /* ViewModifiers.swift in Sources */,
-				8A84AA4627D666F000A6745D /* TelevisionView.swift in Sources */,
+				8A84AA4627D666F000A6745D /* AnimeView.swift in Sources */,
 				8A87FF7C27D124AA00B2B270 /* ContentView.swift in Sources */,
 				8A84AA4427D666E400A6745D /* MusicView.swift in Sources */,
 				8A87FF7A27D124AA00B2B270 /* About_MeApp.swift in Sources */,
