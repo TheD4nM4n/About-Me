@@ -16,6 +16,9 @@ struct GamesView: View {
                 Text("favorite games")
                     .modifier(TitleModifier(fontSize: 26))
                     .padding(.top)
+                    .onAppear(perform: {
+                        musicViewAudioPlayer?.stop()
+                    })
                 
                 VStack {
                     CardView(image: Image("osu"), title: "osu!", description: "rhythm game" , year: "2008", url: "https://osu.ppy.sh")

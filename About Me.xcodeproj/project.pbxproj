@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A5B88E327E8D282005B669D /* tamagotchi_fin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8A5B88E227E8D282005B669D /* tamagotchi_fin.wav */; };
 		8A84AA4227D666C700A6745D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A84AA4127D666C700A6745D /* HomeView.swift */; };
 		8A84AA4427D666E400A6745D /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A84AA4327D666E400A6745D /* MusicView.swift */; };
 		8A84AA4627D666F000A6745D /* AnimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A84AA4527D666F000A6745D /* AnimeView.swift */; };
@@ -20,6 +21,7 @@
 		8A87FF9527D124AE00B2B270 /* About_MeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A87FF9427D124AE00B2B270 /* About_MeUITests.swift */; };
 		8A87FF9727D124AE00B2B270 /* About_MeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A87FF9627D124AE00B2B270 /* About_MeUITestsLaunchTests.swift */; };
 		8AD5B3E527DA5F23001216FD /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5B3E427DA5F23001216FD /* ViewModifiers.swift */; };
+		8ADD0CAA27EA1D8D00E7C717 /* Boom.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8ADD0CA927EA1D8D00E7C717 /* Boom.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A5B88E227E8D282005B669D /* tamagotchi_fin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = tamagotchi_fin.wav; path = ../../../../Downloads/tamagotchi_fin.wav; sourceTree = "<group>"; };
 		8A84AA4127D666C700A6745D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8A84AA4327D666E400A6745D /* MusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicView.swift; sourceTree = "<group>"; };
 		8A84AA4527D666F000A6745D /* AnimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeView.swift; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 		8A87FF9427D124AE00B2B270 /* About_MeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About_MeUITests.swift; sourceTree = "<group>"; };
 		8A87FF9627D124AE00B2B270 /* About_MeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About_MeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8AD5B3E427DA5F23001216FD /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		8ADD0CA927EA1D8D00E7C717 /* Boom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Boom.wav; path = ../../../../Downloads/Boom.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 		8A5B88E127E8CB8B005B669D /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				8ADD0CA927EA1D8D00E7C717 /* Boom.wav */,
+				8A5B88E227E8D282005B669D /* tamagotchi_fin.wav */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -258,6 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A87FF8127D124AD00B2B270 /* Preview Assets.xcassets in Resources */,
+				8ADD0CAA27EA1D8D00E7C717 /* Boom.wav in Resources */,
+				8A5B88E327E8D282005B669D /* tamagotchi_fin.wav in Resources */,
 				8A87FF7E27D124AD00B2B270 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

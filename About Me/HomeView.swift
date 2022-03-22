@@ -17,6 +17,7 @@ struct HomeView: View {
     }
     
     var body: some View {
+        
         ZStack {
             Color(red: 51/255, green: 51/255, blue: 51/255)
             
@@ -25,6 +26,9 @@ struct HomeView: View {
                     VStack {
                         Text("Daniel Poe")
                             .modifier(TitleModifier(fontSize: 64))
+                            .onAppear(perform: {
+                                musicViewAudioPlayer?.stop()
+                            })
                         
                         Text("18; he/him; senior")
                             .font(.system(

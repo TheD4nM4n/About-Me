@@ -16,6 +16,9 @@ struct AnimeView: View {
                 Text("favorite anime")
                     .modifier(TitleModifier(fontSize: 26))
                     .padding(.top)
+                    .onAppear(perform: {
+                        musicViewAudioPlayer?.stop()
+                    })
                 
                 VStack {
                     CardView(image: Image("demonslayer"), title: "demon slayer", description: "action" , year: "2019", url: "https://demonslayer-anime.com")

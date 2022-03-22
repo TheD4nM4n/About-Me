@@ -6,6 +6,20 @@
 //
 
 import SwiftUI
+import AVFoundation
+
+var musicViewAudioPlayer: AVAudioPlayer?
+
+func playSound(sound: String, type: String){
+    if let path = Bundle.main.path(forResource: sound, ofType: type) {
+        do {
+            musicViewAudioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path))
+            musicViewAudioPlayer?.play()
+        } catch {
+            print("ERROR")
+        }
+    }
+}
 
 struct MusicView: View {
     var body: some View {
@@ -18,6 +32,10 @@ struct MusicView: View {
                     .padding(.top)
                 
                 CardView(image: Image("hindrance"), title: "hindrance. (feat. Atlas in Motion)", description: "astra", year: "2022", url: "https://youtu.be/DK4kV7ER-p0")
+                    .onAppear(perform: {
+                        playSound(sound: "Boom", type: "wav")
+                        musicViewAudioPlayer?.numberOfLoops = -1
+                    })
                 
                 CardView(image: Image("umeanevenlesstomenow"), title: "u mean even less to me now", description: "lieu", year: "2020", url: "https://youtu.be/OejyzWze9DI")
                 
